@@ -20,10 +20,12 @@ namespace CadastroProduto.Api.Data
 
             modelBuilder.Entity<Produto>()
                 .Property(p => p.Descricao)
+                    .HasColumnType("varchar(50)")
                     .IsRequired();
 
             modelBuilder.Entity<Produto>()
                 .Property(p => p.Codigo)
+                    .HasColumnType("varchar(20)")
                     .IsRequired();
 
             modelBuilder.Entity<Produto>()

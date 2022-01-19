@@ -15,7 +15,7 @@ namespace CadastroProduto.Api.Models
 
         public string Descricao { get; set; }
 
-        public List<Departamento> Departamento { get; set; }
+       public List<Departamento> Departamento { get; set; }
 
         public decimal Preco { get; set; }
 
